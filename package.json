@@ -1,0 +1,11 @@
+{
+    "name": "randomdiscordrpc",
+    "version": "1.0.0",
+    "description": "For a random Discord Rich Presence",
+    "main": "index.js",
+    "author": "L061571C5",
+    "license": "ISC",
+    "dependencies": {
+        "discord-rpc": "^3.2.0"
+    }
+}
