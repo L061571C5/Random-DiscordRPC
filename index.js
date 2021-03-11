@@ -1,5 +1,6 @@
 const DiscordRPC = require('discord-rpc');
 const rpc = new DiscordRPC.Client({ transport: 'ipc' });
+require('dotenv').config();
 const random = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '_', '+', '{', '}', '[', ']', 'ᔑ', 'ʖ', 'ᓵ', '↸', 'ᒷ', '⎓', '⊣', '⍑', '╎', '⋮', 'ꖌ', 'ꖎ', 'ᒲ', 'リ', '𝙹', '!', '¡', 'ᑑ', '∷', 'ᓭ', 'ℸ', ' ̣ ', '⚍', '⍊', '∴', '/', '|', '|', '⨅'];
 async function setActivity() {
     rpc.setActivity({
@@ -24,7 +25,7 @@ function randomProperty() {
     return `${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}`
 };
 
-rpc.login({ clientId: 'YOUR_CLIENT_ID_HERE' }).catch(console.error).then(() => {
+rpc.login({ clientId: process.env.ID }).catch(console.error).then(() => {
     setActivity();
     setInterval(() => {
         setActivity();

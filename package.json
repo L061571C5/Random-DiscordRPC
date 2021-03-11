@@ -6,6 +6,7 @@
     "author": "L061571C5",
     "license": "ISC",
     "dependencies": {
-        "discord-rpc": "^3.2.0"
+        "discord-rpc": "^3.2.0",
+        "dotenv": "^8.2.0"
     }
 }
