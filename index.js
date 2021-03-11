@@ -24,7 +24,7 @@ function randomProperty() {
     return `${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}${random[Math.floor(Math.random() * random.length)]}`
 };
 
-rpc.login({ clientId: '806211605326594079' }).catch(console.error).then(() => {
+rpc.login({ clientId: 'YOUR_CLIENT_ID_HERE' }).catch(console.error).then(() => {
     setActivity();
     setInterval(() => {
         setActivity();
